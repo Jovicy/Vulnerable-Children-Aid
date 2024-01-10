@@ -7,6 +7,7 @@
     --mid-cyan: #4BC9C4;
     --black: #2E4049;
     --black-secondary: #727272;
+    --black-footer: #384C56;
     --grey-100: #F1EEEC;
     --grey-200: #ECF1F0;
     --grey-300: #F2F2F2;
@@ -31,6 +32,7 @@ li,
 a {
     text-decoration: none;
     list-style: none;
+    color: none;
 }
 
 /* Utilities */
@@ -407,7 +409,6 @@ nav {
     line-height: 130%;
 }
 
-
 /* What we do */
 .who {
     padding: 5rem 0rem;
@@ -490,14 +491,266 @@ nav {
     width: 21.75rem;
 }
 
+/* Featured */
+.featured {
+    display: flex;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
 
+.featured-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
 
+.featured-content {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.featured-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--black);
+    height: 50%;
+    width: 100%;
+    padding: 4rem;
+}
+
+.featured-title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.featured-title h1 {
+    color: var(--white);
+    font-family: Shippori Mincho;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+}
+
+.featured-title p {
+    color: var(--white);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.featured-preview p {
+    color: var(--orange);
+    font-family: Sue Ellen Francisco;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108.3%;
+}
+
+.featured-img {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.featured-gallery {
+    display: flex;
+    justify-content: stretch;
+    height: 50%;
+    width: 100%;
+}
+
+.featured-gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Newsletter */
+.newsletter {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.newsletter-div {
+    background-color: var(--orange);
+    height: 100%;
+    width: 50%;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.newsletter-preview p {
+    color: var(--white);
+    font-family: Sue Ellen Francisco;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108.3%;
+}
+
+.newsletter-title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 20px;
+}
+
+.newsletter-title h1 {
+    color: var(--white);
+    font-family: Shippori Mincho;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.newsletter-title p {
+    color: var(--white);
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    border-radius: 100px;
+    padding: 10px 30px;
+    border: none;
+}
+
+.newsletter-form input::placeholder {
+    color: var(--black-secondary);
+    font-family: Work Sans;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.blog-div {
+    background-color: blue;
+    height: 100%;
+    width: 50%;
+    padding: 4rem;
+    background: linear-gradient(rgba(119, 215, 211, 0.93), rgba(119, 215, 211, 0.93)),
+        url('../img/volunteer-bg.png') center/cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blog-div-preview p {
+    color: var(--black);
+    font-family: Sue Ellen Francisco;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108.3%;
+}
+
+.blog-div-title h1 {
+    color: var(--black);
+    font-family: Shippori Mincho;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    padding-bottom: 20px;
+}
+
+/* footer */
+.footer {
+    background-color: var(--black);
+    padding: 2.5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo p {
+    color: var(--white);
+}
+
+.footer-paragraph p {
+    text-align: center;
+}
+
+.footer-link {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-link li a {
+    color: var(--white);
+    font-family: Work Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+}
+
+.footer-link li a:hover {
+    color: var(--orange);
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.footer-socials div img {
+    cursor: pointer;
+}
 
 
 
 
 
 /* Button */
+button {
+    cursor: pointer;
+}
+
 .btn_donate {
     background-color: var(--orange);
     border-radius: 100px;
@@ -533,5 +786,24 @@ nav {
 .btn_discover:hover {
     border: 2px solid var(--orange);
     color: var(--orange);
+    background-color: transparent;
+}
+
+.btn_letter {
+    background-color: var(--black);
+    border-radius: 100px;
+    border: 2px solid var(--black);
+    padding: 12px 24px;
+    color: var(--white);
+    font-family: Work Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.btn_letter:hover {
+    border: 2px solid var(--black);
+    color: var(--black);
     background-color: transparent;
 }

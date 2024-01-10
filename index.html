@@ -48,9 +48,9 @@
           <p>Vulnerable <span class="logo-span">Children Aid</span></p>
         </div>
         <ul class="nav-list">
-          <li><a href="#">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#">Who We Are</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Blogs</a></li>
           <button class="btn_donate">Donate</button>
@@ -58,7 +58,7 @@
       </div>
     </nav>
     <!-- header -->
-    <header class="header">
+    <header class="header" id="home">
       <div class="header-container container">
         <div class="header-preview">
           <p>Need Help...</p>
@@ -83,7 +83,7 @@
       </div>
     </header>
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-container container">
         <div class="about-content">
           <div class="about-preview">
@@ -107,7 +107,7 @@
               </p>
             </div>
             <div class="about-btn">
-              <button class="btn_donate">More About</button>
+              <a href="./about.html" class="btn_donate"> More About </a>
             </div>
           </div>
         </div>
@@ -181,7 +181,7 @@
               </div>
             </div>
             <div class="about-donation-btn">
-              <button class="btn_discover">Discover</button>
+              <a href="./about.html" class="btn_discover">Discover</a>
             </div>
           </div>
         </div>
@@ -336,7 +336,121 @@
         </div>
       </div>
     </section>
+    <section class="featured">
+      <div class="featured-container container">
+        <div class="featured-content">
+          <div class="featured-paragraph">
+            <div class="featured-preview">
+              <p>What We Did</p>
+            </div>
+            <div class="featured-title">
+              <h1>Featured Projects</h1>
+              <p>
+                Lorem Ipsum is simply dummy text of the printin typesetting
+                dummy text ever when an unknown printer took a galley of type
+                and scrambled a type specimen book.
+              </p>
+            </div>
+            <div class="featured-btn">
+              <button class="btn_donate">More Project</button>
+            </div>
+          </div>
+          <div class="featured-gallery">
+            <div>
+              <img src="./img/gallery-1.png" alt="gallery-img" />
+            </div>
+            <div>
+              <img src="./img/gallery-2.png" alt="gallery-img" />
+            </div>
+          </div>
+        </div>
+        <div class="featured-img">
+          <div class="featured-gallery">
+            <div>
+              <img src="./img/gallery-3.png" alt="gallery-img" />
+            </div>
+            <div>
+              <img src="./img/gallery-4.png" alt="gallery-img" />
+            </div>
+          </div>
+          <div class="featured-gallery">
+            <div>
+              <img src="./img/gallery-5.png" alt="gallery-img" />
+            </div>
+            <div>
+              <img src="./img/gallery-1.png" alt="gallery-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Newsletter and Blog -->
-    
+    <section class="newsletter">
+      <div class="newsletter-container container">
+        <div class="newsletter-div">
+          <div class="newsletter-preview">
+            <p>Subscribe</p>
+          </div>
+          <div class="newsletter-title">
+            <h1>Newsletter</h1>
+            <p>
+              Sign up for our monthly newsletter to get the latest news,
+              volunteer opportunities.
+            </p>
+          </div>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter Your Email Address" />
+            <button class="btn_letter">Send</button>
+          </div>
+        </div>
+        <div class="blog-div">
+          <div class="blog-div-preview">
+            <p>Recent Blog</p>
+          </div>
+          <div class="blog-div-title">
+            <h1>Take Look At Recent Blog Posts</h1>
+          </div>
+          <div class="blog-div-btn">
+            <button class="btn_letter">Send</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-logo logo">
+          <img src="./img/logo.svg" alt="logo" />
+          <p>Vulnerable <span class="logo-span">Children Aid</span></p>
+        </div>
+        <div class="footer-paragraph">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+            sed do eiusmod tempor incididunt.
+          </p>
+        </div>
+        <div class="footer-link">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Who We Are</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blogs</a></li>
+        </div>
+        <div class="footer-socials">
+          <div>
+            <img src="./img/1.svg" alt="footer-social" />
+          </div>
+          <div>
+            <img src="./img/2.svg" alt="footer-social" />
+          </div>
+          <div>
+            <img src="./img/3.svg" alt="footer-social" />
+          </div>
+          <div>
+            <img src="./img/4.svg" alt="footer-social" />
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
